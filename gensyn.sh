@@ -128,6 +128,7 @@ install_node() {
     echo -e "\n${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo -e "${GREEN}Node installation completed successfully!${NC}"
     echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+    echo -e "Follow my X for updates and guide - https://x.com/Evenorchik"
 }
 
 # Function to check logs
@@ -166,8 +167,9 @@ while true; do
     display_logo
 
     print_menu
-    echo -n "${BOLD}${BLUE}Enter your choice [1-5]: ${NC}"
-    read -p "" choice
+    # Use echo -ne so that ANSI escape codes for formatting are interpreted correctly.
+    echo -ne "${BOLD}${BLUE}Enter your choice [1-5]: ${NC}"
+    read choice
 
     case $choice in
         1)
@@ -197,4 +199,4 @@ while true; do
     fi
 done
 
-# Your Twitter link: https://x.com/Evenorchik
+#Twitter link: https://x.com/Evenorchik
